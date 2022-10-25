@@ -6,7 +6,7 @@ jobs:
     name: A job to say hello
     steps:
       - name: Hello world action steps
-      - id: hello
+        id: hello
         uses: hdthinh1012/hello-world-docker-action@v1
         with:
           who-to-greet: 'hdthinh1012'
