@@ -7,4 +7,8 @@ jobs:
     steps:
       - name: Hello world action steps
       - id: hello
-        uses: 
+        uses: hdthinh1012/hello-world-docker-action@v1
+        with:
+          who-to-greet: 'hdthinh1012'
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.time }}" # steps: get all steps; .hello from id:hello; time from time >> $GITHUB_OUTPUTS
